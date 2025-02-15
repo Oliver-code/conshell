@@ -1,0 +1,42 @@
+C:\Users\craig\OneDrive\Desktop\Oliver\coding\CS projects\Conshell\Conshell\bin\Debug\net9.0\Conshell.exe
+C:\Users\craig\OneDrive\Desktop\Oliver\coding\CS projects\Conshell\Conshell\bin\Debug\net9.0\Conshell.deps.json
+C:\Users\craig\OneDrive\Desktop\Oliver\coding\CS projects\Conshell\Conshell\bin\Debug\net9.0\Conshell.runtimeconfig.json
+C:\Users\craig\OneDrive\Desktop\Oliver\coding\CS projects\Conshell\Conshell\bin\Debug\net9.0\Conshell.dll
+C:\Users\craig\OneDrive\Desktop\Oliver\coding\CS projects\Conshell\Conshell\bin\Debug\net9.0\Conshell.pdb
+C:\Users\craig\OneDrive\Desktop\Oliver\coding\CS projects\Conshell\Conshell\obj\Debug\net9.0\Conshell.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\craig\OneDrive\Desktop\Oliver\coding\CS projects\Conshell\Conshell\obj\Debug\net9.0\Conshell.AssemblyInfoInputs.cache
+C:\Users\craig\OneDrive\Desktop\Oliver\coding\CS projects\Conshell\Conshell\obj\Debug\net9.0\Conshell.AssemblyInfo.cs
+C:\Users\craig\OneDrive\Desktop\Oliver\coding\CS projects\Conshell\Conshell\obj\Debug\net9.0\Conshell.csproj.CoreCompileInputs.cache
+C:\Users\craig\OneDrive\Desktop\Oliver\coding\CS projects\Conshell\Conshell\obj\Debug\net9.0\Conshell.dll
+C:\Users\craig\OneDrive\Desktop\Oliver\coding\CS projects\Conshell\Conshell\obj\Debug\net9.0\refint\Conshell.dll
+C:\Users\craig\OneDrive\Desktop\Oliver\coding\CS projects\Conshell\Conshell\obj\Debug\net9.0\Conshell.pdb
+C:\Users\craig\OneDrive\Desktop\Oliver\coding\CS projects\Conshell\Conshell\obj\Debug\net9.0\Conshell.genruntimeconfig.cache
+C:\Users\craig\OneDrive\Desktop\Oliver\coding\CS projects\Conshell\Conshell\obj\Debug\net9.0\ref\Conshell.dll
+O:\Code\CS projects\Conshell\Conshell\bin\Debug\net9.0\Conshell.exe
+O:\Code\CS projects\Conshell\Conshell\bin\Debug\net9.0\Conshell.deps.json
+O:\Code\CS projects\Conshell\Conshell\bin\Debug\net9.0\Conshell.runtimeconfig.json
+O:\Code\CS projects\Conshell\Conshell\bin\Debug\net9.0\Conshell.dll
+O:\Code\CS projects\Conshell\Conshell\bin\Debug\net9.0\Conshell.pdb
+O:\Code\CS projects\Conshell\Conshell\obj\Debug\net9.0\Conshell.GeneratedMSBuildEditorConfig.editorconfig
+O:\Code\CS projects\Conshell\Conshell\obj\Debug\net9.0\Conshell.AssemblyInfoInputs.cache
+O:\Code\CS projects\Conshell\Conshell\obj\Debug\net9.0\Conshell.AssemblyInfo.cs
+O:\Code\CS projects\Conshell\Conshell\obj\Debug\net9.0\Conshell.csproj.CoreCompileInputs.cache
+O:\Code\CS projects\Conshell\Conshell\obj\Debug\net9.0\Conshell.dll
+O:\Code\CS projects\Conshell\Conshell\obj\Debug\net9.0\refint\Conshell.dll
+O:\Code\CS projects\Conshell\Conshell\obj\Debug\net9.0\Conshell.pdb
+O:\Code\CS projects\Conshell\Conshell\obj\Debug\net9.0\Conshell.genruntimeconfig.cache
+O:\Code\CS projects\Conshell\Conshell\obj\Debug\net9.0\ref\Conshell.dll
+C:\Users\craig\Desktop\My files\code projects\CS projects\Conshell\Conshell\bin\Debug\net9.0\Conshell.exe
+C:\Users\craig\Desktop\My files\code projects\CS projects\Conshell\Conshell\bin\Debug\net9.0\Conshell.deps.json
+C:\Users\craig\Desktop\My files\code projects\CS projects\Conshell\Conshell\bin\Debug\net9.0\Conshell.runtimeconfig.json
+C:\Users\craig\Desktop\My files\code projects\CS projects\Conshell\Conshell\bin\Debug\net9.0\Conshell.dll
+C:\Users\craig\Desktop\My files\code projects\CS projects\Conshell\Conshell\bin\Debug\net9.0\Conshell.pdb
+C:\Users\craig\Desktop\My files\code projects\CS projects\Conshell\Conshell\obj\Debug\net9.0\Conshell.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\craig\Desktop\My files\code projects\CS projects\Conshell\Conshell\obj\Debug\net9.0\Conshell.AssemblyInfoInputs.cache
+C:\Users\craig\Desktop\My files\code projects\CS projects\Conshell\Conshell\obj\Debug\net9.0\Conshell.AssemblyInfo.cs
+C:\Users\craig\Desktop\My files\code projects\CS projects\Conshell\Conshell\obj\Debug\net9.0\Conshell.csproj.CoreCompileInputs.cache
+C:\Users\craig\Desktop\My files\code projects\CS projects\Conshell\Conshell\obj\Debug\net9.0\Conshell.dll
+C:\Users\craig\Desktop\My files\code projects\CS projects\Conshell\Conshell\obj\Debug\net9.0\refint\Conshell.dll
+C:\Users\craig\Desktop\My files\code projects\CS projects\Conshell\Conshell\obj\Debug\net9.0\Conshell.pdb
+C:\Users\craig\Desktop\My files\code projects\CS projects\Conshell\Conshell\obj\Debug\net9.0\Conshell.genruntimeconfig.cache
+C:\Users\craig\Desktop\My files\code projects\CS projects\Conshell\Conshell\obj\Debug\net9.0\ref\Conshell.dll

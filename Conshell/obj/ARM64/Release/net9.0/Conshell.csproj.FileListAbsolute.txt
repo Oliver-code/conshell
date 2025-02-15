@@ -1,0 +1,14 @@
+O:\Code\CS projects\Conshell\Conshell\bin\ARM64\Release\net9.0\Conshell.exe
+O:\Code\CS projects\Conshell\Conshell\bin\ARM64\Release\net9.0\Conshell.deps.json
+O:\Code\CS projects\Conshell\Conshell\bin\ARM64\Release\net9.0\Conshell.runtimeconfig.json
+O:\Code\CS projects\Conshell\Conshell\bin\ARM64\Release\net9.0\Conshell.dll
+O:\Code\CS projects\Conshell\Conshell\bin\ARM64\Release\net9.0\Conshell.pdb
+O:\Code\CS projects\Conshell\Conshell\obj\ARM64\Release\net9.0\Conshell.GeneratedMSBuildEditorConfig.editorconfig
+O:\Code\CS projects\Conshell\Conshell\obj\ARM64\Release\net9.0\Conshell.AssemblyInfoInputs.cache
+O:\Code\CS projects\Conshell\Conshell\obj\ARM64\Release\net9.0\Conshell.AssemblyInfo.cs
+O:\Code\CS projects\Conshell\Conshell\obj\ARM64\Release\net9.0\Conshell.csproj.CoreCompileInputs.cache
+O:\Code\CS projects\Conshell\Conshell\obj\ARM64\Release\net9.0\Conshell.dll
+O:\Code\CS projects\Conshell\Conshell\obj\ARM64\Release\net9.0\refint\Conshell.dll
+O:\Code\CS projects\Conshell\Conshell\obj\ARM64\Release\net9.0\Conshell.pdb
+O:\Code\CS projects\Conshell\Conshell\obj\ARM64\Release\net9.0\Conshell.genruntimeconfig.cache
+O:\Code\CS projects\Conshell\Conshell\obj\ARM64\Release\net9.0\ref\Conshell.dll
