@@ -1,6 +1,6 @@
 # conshell
 An advanced application for consoles
-IMPORTANT! Development of conshell has stoped and moved on to the next application, bugs will not be fixed unless it makes the app unsafe or unsable (deleting things from the Reg will not be pached) and feature ideas will not be added but could be added to the latest version if the developer (me) notices, if you want to have a feature you want to add, recomend it for the latest project, not this one.
+IMPORTANT! Development of conshell has stoped and moved on to the next application, bugs will not be fixed unless it makes the app unsafe or unsable (deleting things from the Reg will not be pached) and feature ideas will not be added but could be added to the latest version if the developer (me) notices, if you want to have a feature you want to add, recomend it on the latest project, not this one.
 
 an Activation method is in this application and some tools are locked, you can create a directory in the Reg folder and call it ForceActivate and put inside it Activate.act (nothing needs to be in the file) or you can activate with on of the 25 usable keys, all 25 usable keys will be listed below
 c6aa-d82A-conshell-Ofa0
