@@ -325,7 +325,7 @@ class Program
         if (coma == "about")
         {
 
-            Console.WriteLine($"Conshell version: 1.2 \nabout: A terminal desined for creating, editing and deleting files and folders. With auto save on exit and auto open saved paths on startup \nActivated: {activated}");
+            Console.WriteLine($"Conshell version: 1.3 \nCreator: Oliver \nabout: A terminal desined for creating, editing and deleting files and folders. With auto save on exit and auto open saved paths on startup \nActivated: {activated}");
             Main();
         }
 
