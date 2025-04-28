@@ -1,7 +1,7 @@
 # conshell
 An advanced application for consoles.
 
-an Activation method is in this application and some tools are locked, you can create a directory in the Reg folder and call it ForceActivate and put inside it Activate.act (nothing needs to be in the file) or you can activate with on of the 25 usable keys, all 25 usable keys will be listed below
+an Activation method is in this application and some tools are locked, you can create a directory in the Reg folder and call it ForceActivate and put inside it Activate.act (nothing needs to be in the file) or you can activate with one of the 25 usable keys, all 25 usable keys will be listed below
 
 c6aa-d82A-conshell-Ofa0   
 d18C-O679-conshell-d155   
