@@ -3,33 +3,6 @@ using System.Runtime.CompilerServices;
 
 class Program
 {
-
-    static bool Slashunder1(string input)
-    {
-
-        int slash = 0;
-
-        foreach (char item in input)
-        {
-
-            if (item == '\\')
-            {
-                slash++;
-            }
-
-        }
-
-        if (slash >= 1)
-        {
-
-            return false;
-
-        }
-
-        return true;
-
-    }
-
     static void ChangeSetting(string setting, int value)
     {
 
@@ -75,74 +48,64 @@ class Program
 
     static void ApplySettings()
     {
-
-        string open = File.ReadAllText("Reg\\Settings\\openonboot\\openonboot.bin");
-        string save = File.ReadAllText("Reg\\Settings\\saveonexit\\saveonexit.bin");
-        string show = File.ReadAllText("Reg\\Settings\\showsettingsstate\\showsettingsstate.bin");
-        string acti = File.ReadAllText("Reg\\Activation\\activated\\activated.bin");
-
-        if (open == "1")
+        try
         {
 
-            openonboot = true;
+            string open = File.ReadAllText("Reg\\Settings\\openonboot\\openonboot.bin");
+            string save = File.ReadAllText("Reg\\Settings\\saveonexit\\saveonexit.bin");
+            string show = File.ReadAllText("Reg\\Settings\\showsettingsstate\\showsettingsstate.bin");
+            string acti = File.ReadAllText("Reg\\Activation\\activated\\activated.bin");
 
-        }
-
-        if (save == "1")
-        {
-
-            saveonexit = true;
-
-        }
-
-        if (show == "1")
-        {
-
-            showsettingsstate = true;
-
-        }
-        
-        if (Directory.Exists("Reg\\ForceActivate"))
-        {
-
-            if (File.Exists("Reg\\ForceActivate\\Activate.act"))
+            if (open == "1")
             {
 
-                acti = "1";
-                
+                openonboot = true;
 
             }
 
-        }
-
-        if (acti == "1")
-        {
-            activated = true;
-        }
-
-    }
-
-    static int Getindex(string[] array, string stringtofind)
-    {
-
-        int index = 0;
-
-        foreach (string item in array)
-        {
-
-            if (item == stringtofind)
+            if (save == "1")
             {
-                return index;
+
+                saveonexit = true;
+
             }
 
-            index++;
+            if (show == "1")
+            {
 
+                showsettingsstate = true;
+
+            }
+
+            if (Directory.Exists("Reg\\ForceActivate"))
+            {
+
+                if (File.Exists("Reg\\ForceActivate\\Activate.act"))
+                {
+
+                    acti = "1";
+
+
+                }
+
+            }
+
+            if (acti == "1")
+            {
+                activated = true;
+            }
         }
 
-        return 1;
+        catch
+        {
 
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($"There was a error loading the settings, the registry could be damaged or corrupted");
+            Console.ForegroundColor = ConsoleColor.White;
+            Environment.Exit(0);
+        }
     }
-
+     
     static string Splitfirst(string input)
     {
         int index = input.IndexOf(' ');
@@ -325,7 +288,7 @@ class Program
         if (coma == "about")
         {
 
-            Console.WriteLine($"Conshell version: 1.3 \nCreator: Oliver \nabout: A terminal desined for creating, editing and deleting files and folders. With auto save on exit and auto open saved paths on startup \nActivated: {activated}");
+            Console.WriteLine($"Conshell version: 1.4 \nCreator: Oliver \nabout: A terminal desined for creating, editing and deleting files and folders. With auto save on exit and auto open saved paths on startup \nActivated: {activated}");
             Main();
         }
 
@@ -558,7 +521,7 @@ class Program
                     {
 
                         Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("No activation key data found, contact the person that distributed the app for another key and try activation. If this does not work get a replace your Registry (You need to give the old registry to the person creating the new one)");
+                        Console.WriteLine("No activation key data found, try another key for activation. If this does not work wait for another release ");
                         Console.ForegroundColor = ConsoleColor.White;
                         Main();
                     }
@@ -684,7 +647,7 @@ class Program
 
                 }
 
-                if (!syspath.EndsWith("\\"))
+                if (!syspath.EndsWith('\\'))
                 {
                     syspath = $"{syspath}\\";
                 }
