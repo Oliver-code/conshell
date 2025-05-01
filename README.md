@@ -1,8 +1,12 @@
 # conshell
 An advanced application for consoles.
+there are settings that can be changed
+the settings that can be changed are:
+openonboot open a path saved by the next setting, 
+saveonexit save the path opened in conshell (this> C:\Windows\<to here>) that can be opened by the openonboot setting, 
+there is a debug mode, how to use it is described on release 1.5
 
 an Activation method is in this application and some tools are locked, you can create a directory in the Reg folder and call it ForceActivate and put inside it Activate.act (nothing needs to be in the file) or you can activate with one of the 25 usable keys, all 25 usable keys will be listed below
-
 c6aa-d82A-conshell-Ofa0   
 d18C-O679-conshell-d155   
 39FO-013c-conshell-cOCF   
