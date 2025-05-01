@@ -1,8 +1,10 @@
-﻿using System.Dynamic;
+﻿using Microsoft.VisualBasic;
+using System.Dynamic;
 using System.Runtime.CompilerServices;
 
 class Program
 {
+    
     static void ChangeSetting(string setting, int value)
     {
 
@@ -29,16 +31,7 @@ class Program
             
        }
 
-       if (setting == "showsettingsstate")
-       {
-
-
-            File.Delete("Reg\\Settings\\showsettingsstate\\showsettingsstate.bin");
-            File.WriteAllText("Reg\\Settings\\showsettingsstate\\showsettingsstate.bin", $"{value}");
-
-
-            
-       }
+       
 
 
         
@@ -53,7 +46,7 @@ class Program
 
             string open = File.ReadAllText("Reg\\Settings\\openonboot\\openonboot.bin");
             string save = File.ReadAllText("Reg\\Settings\\saveonexit\\saveonexit.bin");
-            string show = File.ReadAllText("Reg\\Settings\\showsettingsstate\\showsettingsstate.bin");
+            string deb = File.ReadAllText("Reg\\Debug\\debug.bin");
             string acti = File.ReadAllText("Reg\\Activation\\activated\\activated.bin");
 
             if (open == "1")
@@ -70,12 +63,17 @@ class Program
 
             }
 
-            if (show == "1")
-            {
+            if (deb == "1")
+            { 
 
-                showsettingsstate = true;
-
+                if (debfirstboot)
+                {
+                    Console.WriteLine("Debug Mode is enabled and setting states will be shown");
+                    debfirstboot = false; 
+                }
+                debug = true;
             }
+
 
             if (Directory.Exists("Reg\\ForceActivate"))
             {
@@ -102,6 +100,8 @@ class Program
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"There was a error loading the settings, the registry could be damaged or corrupted");
             Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("Press any key to continue . . . ");
+            Console.ReadKey();
             Environment.Exit(0);
         }
     }
@@ -119,16 +119,18 @@ class Program
         return input.Substring(index + 1);
     }
 
-    static bool firstboot = true;
+    
 
     static string syspath = "C:\\";
     static string oldpath;
     static bool openonboot = false;
+    static bool debfirstboot = true;
+    static bool debug = false;
     static bool saveonexit = false;
     static bool activated = false;
-    static bool showsettingsstate = false;
-    
-    static void Main()
+    static bool firstboot = true;
+
+static void Main()
     {
 
 
@@ -138,14 +140,18 @@ class Program
         {
 
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("\aCritical Error: Registry does not exist");
+            Console.WriteLine("Critical Error: Registry does not exist");
             Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Press any key to continue . . . ");
             Console.ReadKey();
             Environment.Exit(0);
         }
 
-        ApplySettings();
+        if (debug)
+        {
+            Console.WriteLine($"saveonexit: {saveonexit}, openonboot: {openonboot}, activated: {activated}, debug: {debug}");
+        }
+        
         if (firstboot)
         {
             
@@ -172,14 +178,11 @@ class Program
             firstboot = false;
 
         }
-
+        ApplySettings();
 
 
         string path = Path.Combine(syspath, ">");
-        if (showsettingsstate)
-        {
-            Console.WriteLine($"{openonboot} {saveonexit} {showsettingsstate} {activated}");
-        }
+        
         Console.Write(path);
         string input = Console.ReadLine();
         string coma = input.ToLower();
@@ -200,7 +203,7 @@ class Program
         if (coma == "help")
         {
 
-            Console.WriteLine("echo <text> \nexit \nabout \ndir \nread <file> \nmkdir <folder> \nmkfile <file> \nregedit \npathsave <path or 'dir' for existing folder> \npathopen \nrmfile <file> \nwrite <file> \nchangset <setting> <value> \nvalidkey <product key> \nrmfile <file> \ncd <folder> \nrmdir <folder> \nactivate <product key>");
+            Console.WriteLine("echo <text> \nexit \nabout \ndir \nread <file> \nmkdir <folder> \nmkfile <file> \nregedit \npathsave <path or 'dir' for existing folder> \ndebug <enable / disable / show> \npathopen \nrmfile <file> \nwrite <file> \nchangset <setting> <value> \nvalikey <product key> \nrmfile <file> \ncd <folder> \nrmdir <folder> \nactivate <product key>");
             Main();
 
         }
@@ -288,7 +291,7 @@ class Program
         if (coma == "about")
         {
 
-            Console.WriteLine($"Conshell version: 1.4 \nCreator: Oliver \nabout: A terminal desined for creating, editing and deleting files and folders. With auto save on exit and auto open saved paths on startup \nActivated: {activated}");
+            Console.WriteLine($"Conshell version: 1.5 \nCreator: Oliver \nabout: A terminal desined for creating, editing and deleting files and folders. With auto save on exit and auto open saved paths on startup \nActivated: {activated}");
             Main();
         }
 
@@ -446,6 +449,32 @@ class Program
                 Console.WriteLine($"Created file: {exp}");
                 Main();
 
+            }
+
+            if (com == "debug")
+            {
+                if (exp == "enable")
+                {
+                    File.Delete("Reg\\Debug\\debug.bin");
+                    File.WriteAllText("Reg\\Debug\\debug.bin", "1");
+                    debug = true;
+                    Console.WriteLine("Debug mode enabled");
+                    Main();
+                }
+                if (exp == "disable")
+                {
+                    File.Delete("Reg\\Debug\\debug.bin");
+                    File.WriteAllText("Reg\\Debug\\debug.bin", "0");
+                    debug = false;
+                    Console.WriteLine("Debug mode disabled");
+                    Main();
+                }
+                if (exp == "show")
+                {
+                    
+                    Console.WriteLine($"Debug mode: {debug}");
+                    Main();
+                }
             }
 
             if (com == "write")
